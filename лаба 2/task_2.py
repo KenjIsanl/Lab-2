@@ -8,5 +8,5 @@ while months > 0:
     money_capital += spend - salary
     months -= 1
     spend += spend * increase
-round_money_capital = int(money_capital // 1) + (1 if money_capital % 1 > 0 else 0)
-print(f"Подушка безопасности, чтобы протянуть 10 месяцев без долгов:", round_money_capital)
+rounded_money_capital = int(money_capital // 1) + (1 if money_capital % 1 > 0 else 0)
+print(f"Подушка безопасности, чтобы протянуть 10 месяцев без долгов:", rounded_money_capital)
