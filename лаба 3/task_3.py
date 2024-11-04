@@ -13,14 +13,13 @@ def count_letters(text):  # TODO  Напишите функцию count_letters
 
 def calculate_frequency(letters_dictionary):  # TODO Напишите функцию calculate_frequency
     total_char = 0
-    for value in letters_dictionary.values():
-        total_char += value
-    for key, value in letters_dictionary.items():
-        frequency = value / total_char
+    for values in letters_dictionary.values():
+        total_char += values
+    for keys, values in letters_dictionary.items():
+        frequency = values / total_char
 
         letters_dictionary.update(
-            {key: frequency
-            }
+            {key: frequency}
         )
     return letters_dictionary
 
