@@ -2,10 +2,10 @@ def find_common_participants(str_1, str_2, split=","):
     list_1 = str_1.split(split)
     list_2 = str_2.split(split)
     list1_2 = []
-    for i in range(len(list_1)):
-        for j in range(len(list_2)):
-            if list_1[i] == list_2[j]:
-                list1_2.append(list_1[i])
+    for i in list_1:
+        for j in list_2:
+            if i == j:
+                list1_2.append(i)
     return list1_2
 
 
