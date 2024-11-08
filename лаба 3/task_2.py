@@ -6,7 +6,7 @@ def find_common_participants(str_1, str_2, split=","):
         for j in list_2:
             if i == j:
                 list1_2.append(i)
-    return list1_2
+    return sorted(list1_2)
 
 
 participants_first_group = "Иванов|Петров|Сидоров"
