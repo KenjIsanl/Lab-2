@@ -56,4 +56,4 @@ main_str = """
 """
 
 for key, value in calculate_frequency(count_letters(main_str)).items():
-    print(f'{key}: {"%.2f" % round(value, 2)}')
+    print(f"{key}: {value:.2f}")
